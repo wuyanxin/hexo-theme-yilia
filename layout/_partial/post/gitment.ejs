@@ -1,9 +1,11 @@
-<div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<div id="gitment-ctn"
+  style="max-width: 760px;margin: auto;padding: 0 !important;min-height: 0;">
+</div> 
+<link rel="stylesheet" href="/gitment.default.css">
+<script src="https://o1wu3x9k6.qnssl.com/assets/js/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "<%=url%>",
+  id: "<%= post.title %>",
   owner: '<%=theme.gitment_owner%>',
   repo: '<%=theme.gitment_repo%>',
   oauth: {
